@@ -426,9 +426,9 @@ variable, ensure you modify the variable before loading the library.</p>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># library(teal)</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># will change the default because teal is attached after changing the variable</span></span></code></pre></div>
 <p>Alternatively, you can change the options after loading a package and
-then call <code>teal.logger::register_logger()</code> with the
-appropriate namespace name to change the default of a single package.
-E.g. this will change the defaults of <code>teal.logger</code>. Replace
+then call <code>register_logger()</code> with the appropriate namespace
+name to change the default of a single package. E.g. this will change
+the defaults of <code>teal.logger</code>. Replace
 <code>teal.logger</code> with the name of the package you want to
 change.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(teal.logger)</span>
@@ -436,7 +436,7 @@ change.</p>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">register_logger</span>(<span class="st">&#39;teal.logger&#39;</span>)</span></code></pre></div>
 <p>For a more comprehensive understanding, consult the <a href="https://daroczig.github.io/logger/articles/customize_logger.html"><code>logger</code>
 documentation</a> and the documentation for
-<code>teal.logger::register_logger()</code>.</p>
+<code>register_logger()</code>.</p>
 </div>
 <div id="customizing-the-log-layout" class="section level2">
 <h2>Customizing the Log Layout</h2>
@@ -492,9 +492,9 @@ library.</p>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(teal.logger)</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># will change the default because teal is attached after changing the variable</span></span></code></pre></div>
 <p>Alternatively, you can change the options after loading a package and
-then call <code>teal.logger::register_logger()</code> with the
-appropriate namespace name to change the default of a single package.
-E.g. this will change the defaults of <code>teal.logger</code>. Replace
+then call <code>register_logger()</code> with the appropriate namespace
+name to change the default of a single package. E.g. this will change
+the defaults of <code>teal.logger</code>. Replace
 <code>teal.logger</code> with the name of the package you want to
 change.</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(teal.logger)</span>
@@ -502,7 +502,7 @@ change.</p>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">register_logger</span>(<span class="st">&#39;teal.logger&#39;</span>)</span></code></pre></div>
 <p>For additional insights, consult the <a href="https://daroczig.github.io/logger/articles/customize_logger.html"><code>logger</code>
 documentation</a> and the documentation for
-<code>teal.logger::register_logger()</code>.</p>
+<code>register_logger()</code>.</p>
 </div>
 <div id="customizing-the-log-destination" class="section level2">
 <h2>Customizing the Log Destination</h2>
@@ -518,13 +518,13 @@ API</a>.</p>
 <div id="logging-in-other-teal.x-packages" class="section level2">
 <h2>Logging in Other <code>teal.X</code> Packages</h2>
 <p>Additional <code>teal.X</code> packages, such as
-<code>teal.data</code>, employ
-<code>teal.logger::register_logger()</code> to enroll loggers in their
-namespace. Each package establishes a logger in the namespace equivalent
-to the package name, e.g., <code>teal.data</code> creates a logger in
-the <code>teal.data</code> namespace. A package initializes its logger
-during package loading and utilizes default logging settings, subject to
-modifications explained in the preceding sections.</p>
+<code>teal.data</code>, employ <code>register_logger()</code> to enroll
+loggers in their namespace. Each package establishes a logger in the
+namespace equivalent to the package name, e.g., <code>teal.data</code>
+creates a logger in the <code>teal.data</code> namespace. A package
+initializes its logger during package loading and utilizes default
+logging settings, subject to modifications explained in the preceding
+sections.</p>
 </div>
 <div id="example-of-usage" class="section level2">
 <h2>Example of Usage</h2>
