@@ -1,3 +1,8 @@
+# teal.logger 0.3.1
+
+* Enhance `log_shiny_input_changes` to support log levels provided in lowercase or numeric values.
+* Fixed an issue with incorrect pasting of log messages when they were passed as vectors of length greater than one.
+
 # teal.logger 0.3.0
 
 * New function `log_shiny_input_changes` based on `logger` implementation, but curated to `teal` needs.
