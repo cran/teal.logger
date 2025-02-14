@@ -1,7 +1,7 @@
 Package: teal.logger
 Title: Logging Setup for the 'teal' Family of Packages
-Version: 0.3.1
-Date: 2025-01-21
+Version: 0.3.2
+Date: 2025-02-13
 Authors@R: c(
     person("Dawid", "Kaledkowski", , "dawid.kaledkowski@roche.com", role = c("aut", "cre")),
     person("Konrad", "Pagacz", role = "aut"),
@@ -29,10 +29,10 @@ Encoding: UTF-8
 Language: en-US
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-01-22 17:58:22 UTC; unardid
+Packaged: 2025-02-13 22:47:58 UTC; unardid
 Author: Dawid Kaledkowski [aut, cre],
   Konrad Pagacz [aut],
   F. Hoffmann-La Roche AG [cph, fnd]
 Maintainer: Dawid Kaledkowski <dawid.kaledkowski@roche.com>
 Repository: CRAN
-Date/Publication: 2025-01-22 19:30:02 UTC
+Date/Publication: 2025-02-14 05:40:02 UTC
