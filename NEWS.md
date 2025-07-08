@@ -1,3 +1,7 @@
+# teal.logger 0.4.0
+
+* Update `logger` version to latest release.
+
 # teal.logger 0.3.2
 
 * Fixed a `glue` formatting issues when capturing errors, warnings or messages (#101).
